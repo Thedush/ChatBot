@@ -1,0 +1,36 @@
+import rospy
+import smach
+import os, sys
+import time
+
+class welcome_speech(smach.State):
+    def __init__(self):
+        smach.State.__init__(self, outcomes=['completed'],input_keys=['speech_in'],) # Outcome
+	
+    def execute(self, userdata):
+	rospy.loginfo('Executing welcome speech state')
+	if userdata.speech_in == 'sub1':
+		print("sub1")
+       		#os.system("rosrun raspy_audio speech1.py") # launches the play back file
+	elif userdata.speech_in == 'sub2':
+		print("sub2")
+       		#os.system("rosrun raspy_audio speech2.py") # launches the play back file
+	elif userdata.speech_in == 'Unknown':
+		print("unknown")
+		os.system("roslaunch eva_arm_controller play1.launch")
+		os.system("mpg321 /home/asimov/IRA_V2_ws/src/saya_states/sound_snippets/Welcome_speech.mp3")
+		time.sleep(1)
+		os.system("mpg321 /home/asimov/IRA_V2_ws/src/saya_states/sound_snippets/keyword.mp3")
+		
+		
+       		#os.system("rosrun raspy_audio speech3.py") # launches the play back file
+	elif userdata.speech_in == 'gokul':
+		print("gokul")
+		os.system("roslaunch eva_arm_controller speech_gesture1.launch")
+		os.system("mpg321 /home/asimov/IRA_V2_ws/src/saya_states/sound_snippets/welcome_speech.mp3")
+		time.sleep(1)
+		os.system("mpg321 /home/asimov/IRA_V2_ws/src/saya_states/sound_snippets/keyword.mp3")
+	time.sleep(2)
+	return 'completed'
+
+

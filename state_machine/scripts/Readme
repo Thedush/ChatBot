@@ -1,0 +1,8 @@
+Notes:
+-------
+1. Before running the script ira.py ,source the workspace or else it will throw an error
+
+"ImportError: No module named states.Face_recognition_state"
+
+"ImportError: No module face_rec.srv "
+

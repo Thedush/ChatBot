@@ -1,0 +1,7 @@
+import os, sys
+import rospy
+os.system("roslaunch eva_arm_controller dance1.launch")
+os.system("roslaunch eva_arm_controller dance2.launch")
+
+
+
