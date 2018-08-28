@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+ <category>
+      <pattern>TELL ME ABOUT ESAF</pattern>
+      <template>ESAF is a micro finance institution with K. Paul Thomas as managing director. The success of Grameen bank in Bangladesh reinforced the vision ofthe Managing Director and resulted in the formation of ESAF Micro finance and Investments private limited in 2008.</template>
+   </category>
+   
+   <category>
+      <pattern>WHAT IS ESAF</pattern>
+      <template>
+         <srai>TELL ME ABOUT ESAF</srai>
+      </template>
+   </category>
+    <category>
+      <pattern>DO YOU KNOW ESAF</pattern>
+      <template>
+         YES.<srai>TELL ME ABOUT ESAF</srai>
+      </template>
+   </category>
+
+<!-- mission of esaf -->
+<category>
+      <pattern>MISSION OF ESAF</pattern>
+      <template>ESAF mission is to provide responsive banking services to the under served and unserved households in India</template>
+   </category>
+   
+   <category>
+      <pattern>* MISSION OF ESAF</pattern>
+      <template>
+         <srai>MISSION OF ESAF</srai>
+      </template>
+   </category>
+    <category>
+      <pattern>MISSION OF ESAF *</pattern>
+      <template>
+         <srai>MISSION OF ESAF</srai>
+      </template>
+         </category>
+   <category>
+      <pattern>* ESAF MISSION</pattern>
+      <template>
+         <srai>MISSION OF ESAF</srai>
+      </template>
+   </category>
+    <category>
+      <pattern>ESAF MISSION *</pattern>
+      <template>
+         <srai>MISSION OF ESAF</srai>
+      </template>
+
+   </category>
+ <category>
+      <pattern>* MISSION ESAF</pattern>
+      <template>
+         <srai>MISSION OF ESAF</srai>
+      </template>
+   </category>
+    <category>
+      <pattern>MISSION ESAF *</pattern>
+      <template>
+         <srai>MISSION OF ESAF</srai>
+      </template>
+
+   </category>
+
+
+<category>
+      <pattern>CONTACT ESAF</pattern>
+      <template>You can reach our customer care  at 1 800 103 3723 or email us at customercare@esafbank.com.</template>
+   </category>
+ <category>
+      <pattern>HOW CAN I CONTACT ESAF</pattern>
+      <template>
+         <srai>CONTACT ESAF</srai>
+      </template>
+   </category>
+    <category>
+      <pattern>DO YOU KNOW HOW TO CONTACT ESAF</pattern>
+      <template>
+         YES.<srai>CONTACT ESAF</srai>
+      </template>
+   </category>
+
+
+<category>
+   <pattern>_ CONTACT ESAF</pattern>
+   <template>
+      <srai>CONTACT ESAF</srai>
+   </template>
+</category>
+
+<category>
+   <pattern>CONTACT ESAF *</pattern>
+   <template>
+      <srai>CONTACT ESAF</srai>
+   </template>
+</category>
+
+<category>
+   <pattern>_ CONTACT ESAF *</pattern>
+   <template>
+      <srai>CONTACT ESAF</srai>
+   </template>
+</category>
+
+<category>
+   <pattern>ASIMOV</pattern>
+   <template>
+      ASIMOV robotics provides solutions and consultancy in the areas like  machine vision, robot navigation and  simulation AND control. We have expertise in designing and developing customized solutions for your requirements, that help you maximize your profit and, improve quality.
+   </template>
+</category>
+
+<category>
+   <pattern>_ ASIMOV</pattern>
+   <template>
+      <srai>ASIMOV</srai>
+   </template>
+</category>
+
+<category>
+   <pattern>ASIMOV *</pattern>
+   <template>
+      <srai>ASIMOV</srai>
+   </template>
+</category>
+
+<category>
+   <pattern>_ ASIMOV *</pattern>
+   <template>
+      <srai>ASIMOV</srai>
+   </template>
+</category>
+
+</aiml>
